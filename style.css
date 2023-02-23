@@ -1,0 +1,99 @@
+@font-face {
+  font-family: cunia;
+  src: url("assets/fonts/Cunia-webfont.woff");
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px;
+}
+video {
+  position: fixed;
+  width: 100vw;
+  z-index: -1;
+}
+ul {
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+ul li {
+  padding: 1.25rem;
+  position: relative;
+}
+
+hr {
+  border: 2px solid rgb(51, 51, 51);
+}
+.container {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.navigation {
+  background-color: rgb(188, 206, 251);
+  color: rgb(45, 68, 96);
+  border-radius: 5px 5px 0 0;
+}
+
+.my-pic {
+  float: left;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 5rem;
+  border: 2px solid rgb(125, 125, 125);
+}
+
+.heading {
+  font-family: cunia;
+  font-size: 4rem;
+  text-align: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(12, 22, 45, 0.918);
+  border-radius: 10px;
+  border: 2px solid rgb(125, 125, 125);
+}
+
+.info {
+  display: flex;
+  align-self: center;
+  color: rgb(98, 117, 151);
+  font-family: cunia;
+  font-size: 2em;
+  padding: 3rem 4rem 4rem 0;
+  gap: 2em;
+}
+
+.logo {
+  position: fixed;
+  overflow: hidden;
+  width: 10rem;
+  margin-left: 10rem;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 5px;
+  left: 50%;
+  bottom: 0;
+  background-color: rgb(212, 127, 96);
+  transition: all ease-in-out 0.2s;
+}
+li:hover::after {
+  width: 100%;
+  left: 0;
+}
